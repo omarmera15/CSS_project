@@ -1,0 +1,94 @@
+
+#nav1{
+ height: 150px;
+ background-color: #5b7989;
+ display: flex;
+ flex-direction: row;
+ border-radius: 10px 10px 0px 0px;
+}
+#nav1 nav li{
+padding:50px 5px 5px 5px;
+float:right; display: inline;
+margin: 3px;
+font-family: 'Walter Turncoat', cursive;
+font-size: 20px;
+color: white;
+text-decoration: none;
+}
+#nav1 nav{
+  float: right;
+  height: 130px; width: 400px;
+  margin-left: 18%;
+  margin: 0 auto;
+}
+ h1{
+  margin: 35px 20px 30px 20px;
+  font-family: 'Walter Turncoat', cursive;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  font-size: 50px;
+}
+#nav1 nav ul{
+  height: 120px;
+}
+#nav1 nav a:hover, #nav1 nav a:active, #nav1 nav a:visited{
+  border-radius: 5px;
+  text-shadow: none;
+  text-decoration: none;
+  background: gray;
+  color: white;
+}
+#nav1 nav a:link, #nav1 nav a:visited{
+  display: inline-block;
+  height: 30px;
+  text-decoration: none;
+}
+
+.con2{
+  height: 800px;
+  background-color: #82c3a6;
+  text-align: center;
+}
+.con2 img{
+  padding-top: 75px;
+  height: 650px;
+}
+
+#con3{
+  height: 600px;
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+}
+#con3 .m1{
+  height: 450px; order:1;
+  border: 0 auto;
+  margin: 75px 50px 75px 225px;
+  box-shadow: 2px 2px #82c3a6;
+}
+#con3 .m2{
+  height: 450px; order:2;
+  border: 0 auto;
+  margin: 75px 75px 75px 100px;
+  box-shadow: 2px 2px #82c3a6;
+}
+#con3 .m1:hover{
+  transform: rotate(10deg);
+}
+#con3 .m2:hover {
+  transform: translate(-5px, -20px);
+}
+
+#end{
+  height: 150px;
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  display:flex;
+  flex-direction: row;
+}
+#end ul{
+margin: 25px 150px 25px 150px;
+border: 2px black solid ;
+height: 100px
+}
