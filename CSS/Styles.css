@@ -1,4 +1,13 @@
-
+html{
+  background-color: #02010a;
+  display: block;
+  font-family: 'Dancing Script', cursive;
+}
+#contenido{
+  width: 900px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
 #nav1{
  height: 150px;
  width: 100%;
@@ -6,12 +15,13 @@
  display: flex;
  flex-direction: row;
  border-radius: 10px 10px 0px 0px;
+
 }
 #nav1 nav li{
-padding:50px 5px 5px 5px;
+padding:15px 5px 5px 5px;
 float:right; display: inline;
 margin: 3px;
-font-family: 'Walter Turncoat', cursive;
+
 font-size: 20px;
 color: white;
 text-decoration: none;
@@ -19,18 +29,21 @@ text-shadow: 2px 2px 2px #02010a;
 }
 #nav1 nav{
   float: right;
-  height: 130px; width: 400px;
-  margin-left: 18%;
+  height: 80px; width: 275px;
+  margin-left: 80px;
+  padding-top: 25px;
 }
  h1{
   margin: 35px 20px 30px 20px;
-  font-family: 'Walter Turncoat', cursive;
+
   color: white;
   text-shadow: 2px 2px 2px #02010a;
-  font-size: 50px;
+  font-size: 40px;
 }
 #nav1 nav ul{
-  height: 120px;
+  height: 80px;
+  padding-left: 0px;
+
 }
 #nav1 nav a:hover, #nav1 nav a:active, #nav1 nav a:visited{
   border-radius: 5px;
@@ -46,57 +59,56 @@ text-shadow: 2px 2px 2px #02010a;
 }
 
 #con2{
-  height: 800px;
+  height: 650px;
+  width: 100%;
   background-color: #82c3a6;
   text-align: center;
 }
 #con2 img{
-  padding-top: 75px;
-  height: 650px;
+  margin-top: 75px;
+  height: 500px;
+  box-shadow: 2px 2px #02010a;
 }
 
 #con3{
-  height: 600px;
+  height: 400px;
+  width: 100%;
   background-color: #d5c75f;
   border: 1px;
   display: flex;
   flex-direction: row;
 }
-#con3 .m1{
-  height: 450px; order:1;
+#con3  .m1 , #con3  .m2{
+  height: 300px;
   border: 0 auto;
-  margin: 75px 50px 75px 25%;
+  margin: 50px 75px 50px 75px;
   box-shadow: 2px 2px #82c3a6;
   text-align: left;
 }
-#con3 .m2{
-  height: 450px; order:2;
-  border: 0 auto;
-  margin: 75px 75px 75px 75%;
-  box-shadow: 2px 2px #82c3a6;
-  text-align: right;
-}
-#con3 .m1:hover{
+
+#con3  .m1:hover{
   transform: rotate(10deg);
 }
-#con3 .m2:hover {
+#con3  .m2:hover {
   transform: translate(5px, -20px);
 }
 
 #end{
   height:200px;
+  width: 100%;
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   display:flex;
   flex-direction: row;
 }
 #end div{
-margin: 0px 80px 25px 65px;
+margin: 25px 5px 25px 25px;
 border: 0 auto;
 height: 100px;
-padding: 0px 20px 40px 25px;
+padding: 0px px 40px px;
 text-decoration: none;
-font-family: 'Walter Turncoat', cursive;
+
+font-size: 15px;
 }
 #end .social h2{
  width: 175px;
@@ -113,15 +125,19 @@ font-family: 'Walter Turncoat', cursive;
 .term p , .direc p{
   width: 225px
 }
-@media (max-width:420px) {
+@media (max-width:900px) {
+    #contenido{
+      width: 100%;
+      margin: 0px;
+    }
     #con3{
       display: flex;
       flex-direction: column;
       text-align: center;
-      height: 815px
+      height: 700px
     }
     #con3 .m1 , #con3 .m2{
-      height: 300px;
+      height: 250px;
       margin: 50px 15px 35px ;
     }
     #con2{
@@ -132,70 +148,35 @@ font-family: 'Walter Turncoat', cursive;
       padding-top: 30px;
     }
     #nav1 {
-      height: 250px;
+      height: 200px;
       display: flex;
       flex-direction: column;
       text-align: center;
     }
     #nav1 nav{
-      margin-left : 0%;
+      padding-top: 0px;
+      margin-left: 10px;
+    }
+    #nav1 h1 {
+      font-size: 30px;
+    }
+    #nav1 nav ul {
+      height: 50px;
+      padding: 5px px 15px px;
+    }
+    #nav1 nav li{
+      height: 50px;
+      padding: 5px px 20px px;
 
     }
-    #nav1 h1 {
-      font-size: 30px;
-    }
-    #nav1 nav ul {
-      height: 75px;
-      padding: 5px 50px 20px 0px;
-    }
-    #nav1 nav li{
-      height: 75px;
-      padding: 5px 15px 20px 15px;
-    }
     #end{
-      height: 675px;
+      height: 625px;
       display: flex;
       flex-direction: column;
     }
 }
-@media  (min-width:420px) and (max-width:720px){
-    #con3{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      height: 1115px
+@media  (min-width:900px) and (max-width:1200px){
+    #contenido{
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    #con3 .m1 , #con3 .m2{
-      height: 450px;
-      margin: 50px 15px 35px 15px;
-    }
-    #con2{
-      height: 400px;
-    }
-    #con2 .m {
-      height: 345px;
-      padding-top: 30px;
-    }
-    #nav1 {
-      height: 225px;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    #nav1 h1 {
-      font-size: 30px;
-    }
-    #nav1 nav ul {
-      height: 75px;
-      padding: 5px 15px 20px 20px;
-    }
-    #nav1 nav li{
-      height: 75px;
-      padding: 5px 15px 20px 20px;
-    }
-    #end{
-      height: 675px;
-      display: flex;
-      flex-direction: column;
-    }
-}
