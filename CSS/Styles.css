@@ -15,7 +15,7 @@ html{
  display: flex;
  flex-direction: row;
  border-radius: 10px 10px 0px 0px;
-
+animation: Photo 1s;
 }
 #nav1 nav li{
 padding:15px 5px 5px 5px;
@@ -145,7 +145,8 @@ font-size: 15px;
     }
     #con2 .m {
       height: 190px;
-      padding-top: 30px;
+      padding-top: 0px;
+      margin-top: 20px;
     }
     #nav1 {
       height: 200px;
@@ -180,3 +181,80 @@ font-size: 15px;
       margin-left: 5%;
       margin-right: 5%;
     }
+  }
+#gall{
+  height: 600px;
+  width: 100%;
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: column;
+}
+#gall img{
+  width: 250px;
+  height: 250px;
+  box-shadow: 2px 2px #02010a;
+
+}
+#gall .m11{
+  padding: 30px 10px 10px 45px;
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+#gall .m12{
+  margin: 30px 10px 10px 15px;
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+#gall .m13{
+  margin: 30px 10px 10px 15px;
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
+}
+#gall .m14{
+  margin: 20px 10px 10px 45px;
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+#gall .m15{
+  margin: 20px 10px 10px 15px;
+}
+#gall .m16{
+  margin: 20px 10px 10px 15px;
+  -webkit-filter:grayscale(100%);
+  filter: grayscale(100%);
+}
+@media (max-width:900px) {
+  #gall{
+    height: 1775px;
+  }
+  #gall .m11{
+    margin: 30px 10px 10px 55px;
+  }
+  #gall .m12{
+    margin: 30px 10px 10px 55px;
+  }
+  #gall .m13{
+    margin: 30px 10px 10px 55px;
+  }
+  #gall .m14{
+    margin: 20px 10px 10px 55px;
+  }
+  #gall .m15{
+    margin: 30px 10px 10px 55px;
+  }
+  #gall .m16{
+    margin: 30px 10px 10px 55px;
+  }
+}
+@keyframes Photo {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
